@@ -81,6 +81,13 @@ cd $tempbuild
 export DEBIAN_FRONTEND=noninteractive; apt-get -y -q install git
 touch "git.done"
 
+echo "Installing Brackets"
+cd $tempbuild
+export DEBIAN_FRONTEND=noninteractive; add-apt-repository -y ppa:webupd8team/brackets
+export DEBIAN_FRONTEND=noninteractive; apt-get -y -q update
+export DEBIAN_FRONTEND=noninteractive; apt-get -y -q install brackets
+touch "brackets.done"
+
 echo "Installing wallpaper"
 cd $tempbuild
 wget https://s3-us-west-1.amazonaws.com/mojombo-codestarter/codestarter-tree.jpg

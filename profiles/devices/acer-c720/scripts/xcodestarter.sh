@@ -100,6 +100,7 @@ favorites=['application://nautilus.desktop', 'application://google-chrome.deskto
 [org.gnome.settings-daemon.peripherals.touchpad]\n\
 \n\
 natural-scroll=true\n\
+tap-to-click=false\n\
 \n\
 [org.gnome.desktop.background]\n\
 \n\
